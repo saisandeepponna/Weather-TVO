@@ -14,7 +14,7 @@ const Weather = () => {
     try {
       setError(null);
       const response = await axios.get(
-        `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${import.meta.env.VITE_WEATHER_API_KEY}&units=metric`
+        `${import.meta.env.VITE_WEATHER_URL}/weather?q=${city}&appid=${import.meta.env.VITE_WEATHER_API_KEY}&units=metric`
       );
       setWeatherData(response.data);
     } catch (error) {
