@@ -83,7 +83,7 @@ const Weather = () => {
           </h2>
           <div className=" flex items-center justify-center space-x-4 my-4">
             <img
-              src={`${VITE_WEATHER_IMG}/${weatherData.weather[0].icon}@2x.png`}
+              src={`${import.meta.env.VITE_WEATHER_IMG}/${weatherData.weather[0].icon}@2x.png`}
               alt="weather icon"
               className="w-16 h-16"
             />
